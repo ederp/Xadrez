@@ -13,7 +13,7 @@ namespace Xadrez {
             Console.WriteLine("Posição: "+p);
             Console.ReadLine();
             */
-
+            /*
             try {
                 Tabuleiro tab = new Tabuleiro(8, 8);
 
@@ -28,6 +28,13 @@ namespace Xadrez {
             catch(TabuleiroException e) {
                 Console.WriteLine(e.Message);
             }
+
+            */
+
+            PosicaoXadrez pos = new PosicaoXadrez('a', 1);
+            Console.WriteLine(pos);
+
+            Console.WriteLine(pos.toPosicao());
         }
     }
 }
