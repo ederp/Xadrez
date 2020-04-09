@@ -4,16 +4,7 @@ using xadrez;
 
 namespace Xadrez {
     class Program {
-        static void Main(string[] args) {
-            /*
-            Posicao p;
-
-            p = new Posicao(3,4);
-
-            Console.WriteLine("Posição: "+p);
-            Console.ReadLine();
-            */
-            
+        static void Main(string[] args) {            
             try {
                 PartidaDeXadrez partida = new PartidaDeXadrez();
 
@@ -56,12 +47,6 @@ namespace Xadrez {
             }
 
             Console.ReadLine();
-            /*
-            PosicaoXadrez pos = new PosicaoXadrez('a', 1);
-            Console.WriteLine(pos);
-
-            Console.WriteLine(pos.toPosicao());
-            */
         }
     }
 }

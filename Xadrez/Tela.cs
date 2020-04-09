@@ -65,12 +65,7 @@ namespace Xadrez {
             for (int i = 0; i < tab.linhas; i++) {
                 Console.Write(8 - i + " ");
                 for (int j = 0; j < tab.colunas; j++) {
-                    if (posicoesPossiveis[i,j]) {
-                        Console.BackgroundColor = fundoAlterado;
-                    }
-                    else {
-                        Console.BackgroundColor = fundoOriginal;
-                    }
+                    Console.BackgroundColor = (posicoesPossiveis[i, j]) ? fundoAlterado : fundoOriginal;
                     imprimirPeca(tab.peca(i, j));
                     Console.BackgroundColor = fundoOriginal;
                 }
